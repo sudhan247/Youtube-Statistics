@@ -5,6 +5,7 @@ import argparse
 import re
 import sys
 import calendar
+import os
 month={calendar.month_abbr[month]:'0'+str(month)if month<10 else str(month) for month in range(1,13)}
 
 def getnum(arg):
@@ -48,9 +49,13 @@ def main(argv):
     if args.input and args.output:
         try:
             fp=open(args.input,'r')
+            
             inp=fp.read().split('\n')
             fp.close()
-            output=(args.input[:args.input.rfind('\\')]+'\\'+args.output+'.csv')
+            if (args.input.rfind('\\'))!=-1:
+                output=(args.input[:args.input.rfind('\\')]+'\\'+args.output+'.csv')
+            else:
+                output=os.getcwd()+'\\'+args.output+'.csv'              
             process(inp).to_csv(output,index=False)
         except:
             print('Some problem occured with specified INPUT FILE/Access Denied while writing the OUTPUT FILE')
