@@ -34,9 +34,11 @@ optional arguments:
 ```
 
 ### Single URL
+## File in current working directory
 ```
 python youtube_scrap.py --input input.txt --output output
 ```
+
 
 ### Multiple URL
 ```
