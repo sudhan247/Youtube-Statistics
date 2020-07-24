@@ -38,8 +38,10 @@ optional arguments:
 ```
 python youtube_scrap.py --input input.txt --output output
 ```
-
-
+#### File in other directory
+```
+python youtube_scrap.py --input C:\Users\Sudhan\input.txt --output output
+```
 ### Multiple URL
 ```
 python youtube_scrap.py --youtubeid ScMzIvxBSi4 --output ScMzIvxBSi4.json
