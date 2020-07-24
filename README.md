@@ -19,7 +19,7 @@ An API to scrap the youtube statistics
     
     Enter cd Youtube_Statistics
     
-    Enter pip install requirements.txt
+    Enter pip install -r requirements.txt
     
 
 ### Usage
