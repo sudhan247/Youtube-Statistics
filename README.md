@@ -35,7 +35,7 @@ optional arguments:
 
 ### Single URL
 ```
-python youtube_scrap.py input.txt --output output
+python youtube_scrap.py --input input.txt --output output
 ```
 
 ### Multiple URL
