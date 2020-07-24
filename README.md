@@ -7,6 +7,12 @@ An API to scrap the youtube statistics
 * Beautiful Soup 4
 * Pandas
 
+### Statistics
+* Views
+* Likes
+* Dislikes
+* Upload Date
+
 ### Installation
 
     git clone https://github.com/sudhan247/Youtube_Statistics.git
